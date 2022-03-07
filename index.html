@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Mi primera web</title>
+</head>
+<body>
+    <!-- Linstas, tipos, ordenar listas-->
+    <!-- ul es lista no ordenada-->
+    <ul>
+        <li>Elemento 1</li>
+        <li>Elemento 2</li>
+        <li>Elemento 3</li>
+    </ul>
+    <!-- ol es lista ordenada-->
+    <ol>
+        <li>Elemento 1</li>
+        <li>Elemento 1</li>
+        <li>Elemento 1</li>
+    </ol>
+     <!-- ol es lista ordenada,anidada e iniciando desde 17 utilizando Value="" -->
+     <ol>
+        <li value="18">Elemento 1</li>
+        <li>Elemento 1</li>
+        <li>Elemento 1</li>
+    </ol>
+     <!-- ol es lista ordenada -ANIDADO- con sub categorias y cambios de secuencia por letras-->
+     <ol>
+        <li value="27">Elemento 1</li>
+        <li>Elemento 1</li>
+        <li>
+            <ol>
+                <li style="lower-alpha;">sub Elemento 1</li>
+                <li style="list-style-type: lower-alpha;">sub Elemento 2</li>
+                <li style="list-style-type: lower-alpha;">sub Elemento 3</li>
+            </ol>
+        </li>
+    </ol>
+
+    <!-- a form se le agrela la función action para poder enviar los datos cargados en 
+    el formulario, tambien se aclara el metodo GET (datos visibles en link) ò POST(datos no visibles en link)-->
+    <form action="/formulario" method="POST">
+        <!-- se coloca label y for para 
+            poder redireccionar el click sobre la celda a completar
+        se coloca id en input para referenciar la condicion en label, en input se coloca nombre="" es una propiedad llave valor (contenido de nuestro campo)-->
+        <label for="nombre">Nombre</label>
+        <input value="Javi" type="text"  id="nombre" nombre="nombre" placeholder="Nombre" />
+        <!--Se usa value para colocar un valor por defecto. 
+        Generalmente en Type se suele colocar ""(text, email, password, radio, checkbox, file)-->
+        <br>
+        <!-- Este codigo br entre <> es para dar un espacio extra entre texto o componentes--> 
+        <br>
+        <label for="password">Password</label>
+        <input type="text" id="password" nombre="password" placeholder="password" />
+        <br>
+        <br>
+        <label for="comentario">Comentario</label>
+        <textarea cols="50" rows="10"  id="comentario" placeholder="Comentario" name="comentario"></textarea>
+        <br>
+        <!-- Una eticata de button es mucho mas presonalizable que una de input, las etiquetas de buton permiten ingresar mas elementos dentro de la etiqueta.--> 
+
+        <button type="button"><img src="C:\Users\Javi\Documents\2022\prueba2\imagenes\machi.jpg">Tipo botón</button>
+        <button type="reset">Tipo reset</button>
+        <button type="submit">Tipo submit bootoon</button>
+        
+    </form>
+    <h1>Titulo1 grande</h1>
+    <h2>Titulo2 mas chico</h2>
+    <h3>Titulo3 mas mas chico</h3>
+    <h6>Titulo6 muchisimo mas chico</h6>
+    <hr> 
+    hr entre <> es una linea
+    <p>texto colocando <>p </p> <br>
+    <p>texto colocando <>p  y resaltando las ultimas<br> palabras colocando <>
+        luego se debe cerrar al final de lo <br>que se quiere <span style="color:blue">resaltar
+    </span></p>
+    <a target="_blank" href="https://www.google.com">Ir a google</a>
+    <br>
+    <!--tarjet="_blank" se utiliza para abrir una pestaña nueva.
+    href="www.paginacualquiera.com espara referenciar un link"-->
+    <img src="C:\Users\Javi\Documents\2022\prueba2\imagenes\machinarium.png" width="150" height="150">
+    <!-- el codigo img es para imagenes, para referenciar una imagen del 
+        disco o un link se coloca href, width es el ancho y height es la altura de la imagen-->
+</body>
+</html>
